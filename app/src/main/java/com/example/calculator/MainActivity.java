@@ -1,15 +1,9 @@
 package com.example.calculator;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.button.MaterialButton;
-
-
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 
@@ -82,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String finalResult = getResult(dataTocalculate);
 
-        if(!finalResult.equals("Er")){
+        if(!finalResult.equals("Error")){
             resulttv.setText(finalResult);
         }
     }
